@@ -1,21 +1,10 @@
-/*
-var Page = function(){
-	this.GetData = function(){
-		if(this.readyState == this.DONE) {
-			if(this.status == 200) {
-				Page.Build(JSON.parse(client.responseText));
-				return;
-			}
-		}
-	}
-
-	this.Build = function(data){
-		console.log(data);
-	}
-};
-*/
 function processData(data) {
-  console.log(data);
+	console.log(data);
+	var limite = data.lentgh;
+	
+	for(var i = 0; i < limite; i++){
+		data[i].Name
+	}
 }
 
 function handler() {	
