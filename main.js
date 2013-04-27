@@ -1,9 +1,10 @@
 function processData(data) {
 	console.log(data);
-	var limite = data.lentgh;
-	
+	var limite = data.lentgh - 1;
+	var article = document.querySelectorAll("#destaques article");
+
 	for(var i = 0; i < limite; i++){
-		data[i].Name
+		  article[i].querySelector(".capa").src = data[i].Content[0].Image;
 	}
 }
 
