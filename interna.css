@@ -1,1 +1,38 @@
-interna.css
+
+#titulo {
+  color: #000000;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+}
+h1{
+	display: block;
+	margin-bottom: 10px;
+	-webkit-margin-before: 0.83em;
+	-webkit-margin-after: 0.83em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+
+}
+
+.paragrafo {
+	color: #474747;
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+p {	
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+
+}
+
+.img {
+	width: 440px;
+	border: none;
+}
