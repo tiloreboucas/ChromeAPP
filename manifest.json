@@ -7,6 +7,6 @@
 			"scripts": ["launcher.js"]
 		}
 	},
-	"icons": { "16": "images/calculator-16.png", "128": "images/calculator-128.png" },
+	"icons": { "16": "images/logo16.png", "128": "images/logo128.png" },
 	"permissions": ["experimental", "http://www.areah.com.br/*"]
 }

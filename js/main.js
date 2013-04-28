@@ -1,17 +1,17 @@
 function processData(data) {
 	var limite = data.length - 1;
-	var article = document.querySelectorAll("#destaques article");
+	var article = document.querySelectorAll(".home article");
 
 	for(var i = 0; i < limite; i++){
     // Capa
-    if(i == 0) getImage(data[i].Content[0].Image, article[i].querySelector(".capaContent"), 440, 215);
-    else getImage(data[i].Content[0].Image, article[i].querySelector(".capaContent"), 212, 112);
+    if(i == 0) getImage(data[i].Content[0].Image, article[i].querySelector(".capa"), 440, 215);
+    else getImage(data[i].Content[0].Image, article[i].querySelector(".capa"), 212, 112);
 
     // Texto
-    article[i].querySelector('.title').innerHTML = data[i].Content[0].Subtitle;
+    /*article[i].querySelector('.title').innerHTML = data[i].Content[0].Subtitle;
     article[i].querySelector('.news').innerHTML = data[i].Content[0].Summary;
     article[i].querySelector('.subtitle').innerHTML = data[i].Content[0].Title;
-
+    */
     article[i].onclick = goToInner;
 	}
 }
@@ -32,9 +32,9 @@ client.onreadystatechange = handler;
 client.open("GET", "http://www.areah.com.br/_w8.aspx");
 client.send();
 
-document.querySelector(".innerSection .btVoltar").onclick = goToHome;
+document.querySelector(".interna .voltar").onclick = goToHome;
 
-function getImage(imgSrc, capaContent, w, h){
+function getImage(imgSrc, target, w, h){
   var finalImage = new RAL.RemoteImage({
     src: imgSrc,
     priority: RAL.Queue.getNextHighestPriority(),
@@ -42,8 +42,9 @@ function getImage(imgSrc, capaContent, w, h){
     height: h
   });
 
-  var containerEl = capaContent;
-  containerEl.appendChild(finalImage.element);
+  //var containerEl = capaContent;
+  //containerEl.appendChild(finalImage.element);
+  target.src = finalImage.element.src;
   RAL.Queue.add(finalImage);
   go();
 }
@@ -54,13 +55,14 @@ function go() {
 }
 
 function goToHome(){
-  document.querySelector(".innerSection").classList.remove("show");  
+  document.querySelector(".interna").classList.remove("aberta");  
 }
 
 function goToInner(categoria, titulo, capa, noticia){
-  document.querySelector(".innerSection").classList.add("show"); 
+  document.querySelector(".interna").classList.add("aberta"); 
 
-  document.querySelector(".innerSection .Titulo").innerHTML = titulo;
-  document.querySelector(".innerSection .containerCover").innerHTML = categoria;
-  document.querySelector(".innerSection .containerContent").innerHTML = noticia;
+  document.querySelector(".interna .area").innerHTML = area;
+  document.querySelector(".interna .titulo").innerHTML = titulo;
+  document.querySelector(".interna .capa").src = capa;
+  document.querySelector(".interna .texto").innerHTML = texto;
 }
