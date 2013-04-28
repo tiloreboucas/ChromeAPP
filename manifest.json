@@ -4,9 +4,9 @@
 	"version": "0.1",
 	"app": {
 		"background": {
-			"scripts": ["launcher.js"]
+			"scripts": ["js/launcher.js"]
 		}
 	},
-	"icons": { "16": "images/logo16.png", "128": "images/logo128.png" },
+	"icons": { "16": "img/logo16.png", "128": "img/logo128.png" },
 	"permissions": ["experimental", "http://www.areah.com.br/*"]
 }
