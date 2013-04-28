@@ -1,0 +1,22 @@
+header {
+	width: 480px;
+	background: #001c43;
+}
+
+header .info {
+	background: #0F458C;
+	width: 480px;
+	height: 20px;
+	line-height: 20px;
+	text-indent: 20px;
+	font-size: 12px;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+}
+
+header .logo {
+	display: block;
+	height: 114px;
+	background: #001c43 url('../img/logo.png') no-repeat 15px center;
+}

@@ -1,5 +1,5 @@
 html, body, .Main {
-	height: 500px;
+	height: 560px;
 	width: 480px;
 	margin: 0 auto;
 }
@@ -10,7 +10,7 @@ html, body, .Main {
 
 .conteudo section {
 	position: absolute;
-	top: 0px;
+	top: 20px;
 }
 
 .conteudo .home { z-index: 2; }

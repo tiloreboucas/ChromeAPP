@@ -69,4 +69,5 @@ function goToInner(){
   document.querySelector(".interna .area").innerHTML = this.dataContent.area;
   document.querySelector(".interna .titulo").innerHTML = this.dataContent.titulo;
   document.querySelector(".interna .texto").innerHTML = this.dataContent.texto;   
+  document.querySelector(".interna .texto").scrollTop = 0;
 }
