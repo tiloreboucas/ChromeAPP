@@ -4,13 +4,20 @@ function processData(data) {
 
 	for(var i = 0; i < limite; i++){
     // Capa
-    if(i == 0) getImage(data[i].Content[0].Image, article[i].querySelector(".capa"), 440, 215);
-    else getImage(data[i].Content[0].Image, article[i].querySelector(".capa"), 212, 112);
+    if(i == 0) getImage(data[0].Content[i].Image, article[i].querySelector(".capa"), 440, 215);
+    else getImage(data[0].Content[i].Image, article[i].querySelector(".capa"), 212, 112);
 
     // Texto
-    article[i].querySelector('.area').innerHTML = data[i].Content[0].Title;
-    article[i].querySelector('.titulo').innerHTML = data[i].Content[0].Subtitle;
+    article[i].querySelector('.area').innerHTML = data[0].Content[i].Title;
+    article[i].querySelector('.titulo').innerHTML = data[0].Content[i].Subtitle;
     
+    article[i].dataContent = {
+      area: data[0].Content[i].Title,
+      titulo: data[0].Content[i].Subtitle,
+      capa: data[0].Content[i].Image,
+      texto: data[0].Content[i].Body
+    } 
+
     article[i].onclick = goToInner;
 	}
 }
@@ -58,5 +65,8 @@ function goToHome(){
 }
 
 function goToInner(){
+  console.log(this.dataContent);
   document.querySelector(".interna").classList.add("aberta");
+
+  
 }
