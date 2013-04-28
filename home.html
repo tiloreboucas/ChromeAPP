@@ -3,15 +3,16 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>AreaH | Site Masculino</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="home.css" rel="stylesheet" type="text/css" />
-	<script src="main.js"></script>
 </head>
 <body>
-  <div class="Main">
-		<header>		
+	<div class="Main">
+		<!-- header -->
+		<header class="header">		
 			<h1 class="logo">
 				<a href=""> 
-					<img src="imagens/logo.png" alt="Area h">		
+					<img src="images/logo.png">		
 				</a>
 			</h1>
 			<div class="options">
@@ -21,92 +22,70 @@
 				</select>
 			</div>
 			<div class="categories">
-				<img src="imagens/txtVibeFeatured.png" alt="VIBE">
-				<img src="imagens/txtCool.png" alt="Cool">
-				<img src="imagens/txtVip.png" alt="vip">
+				<img src="images/txtVibeFeatured.png" alt="VIBE">
+				<img src="images/txtCool.png" alt="Cool">
+				<img src="images/txtVip.png" alt="vip">
 			</div>
 		</header>
+	
 		<section class="mainSection">
 			<div id="destaques">
 				<h2 class="mainTitle">Destaque</h2>
+				
 				<article>
+					<div><a class="capaContent"></a></div>
 					<div>
-					<a href=""><img class="capa" src="" alt=""></a>
+						<h2><a class="subtitle"></a></h2>
+						<div class="text">
+							<h3><a class="title"></a></h3>
+							<p><a class="news"></a></p>
+						</div>			 		
 					</div>
-					<div>
-					<h2>
-					<a href="">nome da imagem</a>
-					</h2>
-					<div class="text">
-					<h3>
-					<a href="">Colocar um assunto</a>			 		
-					</h3>
-					<p>
-					<a href="">...</a>
-					</p>
-					</div>			 		
-					</div>
-				</article> 
+				</article>
 
 				<article>
+					<div><a class="capaContent"></a></div>
 					<div>
-					<a href=""><img class="capa"  src="" alt=""></a>
+						<h2><a class="subtitle"></a></h2>
+						<div class="text">
+							<h3><a class="title"></a></h3>
+							<p><a class="news"></a></p>
+						</div>			 		
 					</div>
-					<div>
-					<h2>
-					<a href="">nome da imagem</a>
-					</h2>
-					<div class="text">
-					<h3>
-					<a href="">Colocar um assunto</a>			 		
-					</h3>
-					<p>
-					<a href="">...</a>
-					</p>
-					</div>			 		
-					</div>
-				</article> 
+				</article>
 
 				<article>
+					<div><a class="capaContent"></a></div>
 					<div>
-					<a href=""><img class="capa"  src="" alt=""></a>
+						<h2><a class="subtitle"></a></h2>
+						<div class="text">
+							<h3><a class="title"></a></h3>
+							<p><a class="news"></a></p>
+						</div>			 		
 					</div>
-					<div>
-					<h2>
-					<a href="">Nome de uma imagem</a>
-					</h2>
-					<div class="text">
-					<h3>
-					<a href="">Colocar um assunto</a>			 		
-					</h3>
-					<p>
-					<a href="">...</a>
-					</p>
-					</div>			 		
-					</div>
-				</article> 
+				</article>
 			</div>
 
-			<div class="limpa"></div>
-			<h2 class="mainFotos">Fotos</h2>
-			<div id="galerias"> 
-				<a href=""></a>
-				<h2><a href="">nome da foto</a></h2>
+			<div id="galerias">
+				<!-- Galerias -->
 			</div>
-				<ul class="listDeFotos">
-					<li><a href=""><img src="" alt="" /></a></li>
-	      			<li><a href=""><img src="" alt="" /></a></li>
-	      			<li><a href=""><img src="" alt="" /></a></li>
-	      			<li><a href=""><img src="" alt="" /></a></li>
-				</ul>
-			<div class="limpa"></div>
 		</section>
+
+		<section class="innerSection">
+			<a class="btVoltar">voltar</a>
+
+			<article>
+				<h1 class="Titulo"><h1>
+				<div class="containerCover"></div>
+				<div class="containerContent"></div>
+			</article>
+		</section>
+			
 		<footer>
-			<p>Visite o AreaH também no:</p>
-			<a href=""><img src="" alt="" /></a>
-			<a href=""><img src="" alt="" /></a>
-			<a href=""><img src="" alt="" /></a>
-		</footer>				
+		</footer>			
 	</div>
+
+	<script src="lib/ral.min.js"></script>
+	<script src="scripts/main.js"></script>
 </body>
 </html>
