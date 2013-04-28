@@ -60,9 +60,7 @@ function go() {
   RAL.Queue.start();
 }
 
-function goToHome(){
-  document.querySelector(".interna").classList.remove("aberta");  
-}
+function goToHome(){ document.querySelector(".interna").classList.remove("aberta"); }
 
 function goToInner(){
   console.log(this.dataContent);
@@ -70,6 +68,5 @@ function goToInner(){
 
   document.querySelector(".interna .area").innerHTML = this.dataContent.area;
   document.querySelector(".interna .titulo").innerHTML = this.dataContent.titulo;
-  //document.querySelector(".interna .capa").innerHTML = this.dataContent.capa;
   document.querySelector(".interna .texto").innerHTML = this.dataContent.texto;   
 }

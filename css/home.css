@@ -1,0 +1,32 @@
+.home {
+	width: 440px;
+	margin: 0 20px;
+}
+
+.home article { margin-bottom: 20px; }
+
+.home article .area {
+	float: left;
+	color: #577194;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.home article .titulo {
+	display: block;
+	text-align: right;
+	color: #0f3567;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.home article:not(.destaque) {
+	width: 212px;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.home article.direita {
+	float: right;
+}
