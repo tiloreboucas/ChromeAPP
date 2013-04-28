@@ -8,10 +8,9 @@ function processData(data) {
     else getImage(data[i].Content[0].Image, article[i].querySelector(".capa"), 212, 112);
 
     // Texto
-    /*article[i].querySelector('.title').innerHTML = data[i].Content[0].Subtitle;
-    article[i].querySelector('.news').innerHTML = data[i].Content[0].Summary;
-    article[i].querySelector('.subtitle').innerHTML = data[i].Content[0].Title;
-    */
+    article[i].querySelector('.area').innerHTML = data[i].Content[0].Title;
+    article[i].querySelector('.titulo').innerHTML = data[i].Content[0].Subtitle;
+    
     article[i].onclick = goToInner;
 	}
 }
@@ -58,11 +57,6 @@ function goToHome(){
   document.querySelector(".interna").classList.remove("aberta");  
 }
 
-function goToInner(categoria, titulo, capa, noticia){
-  document.querySelector(".interna").classList.add("aberta"); 
-
-  document.querySelector(".interna .area").innerHTML = area;
-  document.querySelector(".interna .titulo").innerHTML = titulo;
-  document.querySelector(".interna .capa").src = capa;
-  document.querySelector(".interna .texto").innerHTML = texto;
+function goToInner(){
+  document.querySelector(".interna").classList.add("aberta");
 }

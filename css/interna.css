@@ -4,6 +4,8 @@
 	height: 0px;
 	position: absolute;
 	top: 0px;
+	background-color: #fff;
+	transition: all 1s;
 }
 
 .interna.aberta {
