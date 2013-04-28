@@ -42,10 +42,9 @@ function getImage(imgSrc, target, w, h){
     height: h
   });
 
-  //var containerEl = capaContent;
-  //containerEl.appendChild(finalImage.element);
-  console.log(finalImage);
-  target.src = finalImage.element.src;
+  var containerEl = target;
+  containerEl.appendChild(finalImage.element);
+  
   RAL.Queue.add(finalImage);
   go();
 }
