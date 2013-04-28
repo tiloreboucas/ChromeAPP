@@ -1,3 +1,20 @@
+html, body, .Main {
+	height: 500px;
+	width: 480px;
+}
+
 .conteudo {
 	position: relative;
+}
+
+.conteudo section {
+	position: absolute;
+	top: 0px;
+}
+
+.conteudo .home { z-index: 2; }
+.conteudo .interna { z-index: 1; }
+
+.conteudo section article {
+	cursor: pointer;
 }

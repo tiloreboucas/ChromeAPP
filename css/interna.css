@@ -8,7 +8,15 @@
 	transition: all 1s;
 }
 
-.interna.aberta {
+.conteudo .interna.aberta {
 	opacity: 1;
 	height: 500px;
+	z-index: 3;
+}
+
+.interna .voltar { cursor: pointer; }
+
+.interna .texto {
+	max-height: 400px;
+	overflow-y: auto; 
 }

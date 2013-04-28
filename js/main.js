@@ -68,5 +68,8 @@ function goToInner(){
   console.log(this.dataContent);
   document.querySelector(".interna").classList.add("aberta");
 
-  
+  document.querySelector(".interna .area").innerHTML = this.dataContent.area;
+  document.querySelector(".interna .titulo").innerHTML = this.dataContent.titulo;
+  //document.querySelector(".interna .capa").innerHTML = this.dataContent.capa;
+  document.querySelector(".interna .texto").innerHTML = this.dataContent.texto;   
 }
