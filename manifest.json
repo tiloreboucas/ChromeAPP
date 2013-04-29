@@ -8,5 +8,5 @@
 		}
 	},
 	"icons": { "16": "img/logo16.png", "128": "img/logo128.png" },
-	"permissions": ["experimental", "http://www.areah.com.br/*"]
+	"permissions": ["http://www.areah.com.br/*"]
 }
