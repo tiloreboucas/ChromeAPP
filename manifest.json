@@ -1,7 +1,7 @@
 {
 	"name": "AreaH",
 	"description": "O site do homem moderno",
-	"version": "0.1",
+	"version": "0.2",
 	"app": {
 		"background": {
 			"scripts": ["js/launcher.js"]
