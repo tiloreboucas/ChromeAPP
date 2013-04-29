@@ -1,4 +1,5 @@
 function processData(data) {
+  console.log(data);
 	var limite = data.length - 1;
 	var article = document.querySelectorAll(".home article");
 

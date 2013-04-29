@@ -34,9 +34,7 @@
 	padding: 20px;
 }
 
-.interna .texto > div {
-	margin-bottom: 10px;
-}
+.interna .texto > div { margin-bottom: 10px; }
 
 .interna .texto a {
 	cursor: default;
